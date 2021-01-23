@@ -45,4 +45,10 @@ for (let value of tiles.getTilesByType(assets.tile`tile0`)) {
     coin = sprites.create(assets.image`Magic Coin`, SpriteKind.Coin)
     tiles.placeOnTile(coin, value)
     tiles.setTileAt(value, assets.tile`transparency16`)
+    animation.runImageAnimation(
+    coin,
+    assets.animation`spinning coin`,
+    100,
+    true
+    )
 }
